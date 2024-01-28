@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Expires" content="Sat, 13 Jan 2024 21:30:00 GMT">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta http-equiv="Content-Language" content="ja">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>toppage|ふぁんしーあいらんどスマホ対応版</title>
+<link rel="icon"href="image/favicon.ico">
+<script async src="https://fundingchoicesmessages.google.com/i/pub-9642990549530289?ers=1" nonce="5h84vkcSeRciSopEL3jPnw"></script><script nonce="5h84vkcSeRciSopEL3jPnw">(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}}signalGooglefcPresent();})();</script>
+<meta name="viewport" content="width=device-width" >
+<meta name="description" content="ふぁんしーあいらんどの暫定スマホ版。内容量はクラシック程度。">
+<meta name="keywords" content="ふぁんしーあいらんど,スマホ">
+<style type="text/css">
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■【パソコン用表示】■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+@media screen and (min-width:961px){
+#body{
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1em;
+    text-align: center;
+    position:relative;
+}
+#container{
+    margin-left:auto;margin-right:auto;
+    background-color:#ffffff;width:970px;
+    box-sizing:border-box;padding-bottom:20px;
+}
+/*★★★★★ヘッダー部分★★★★★*/
+/*ヘッダーカバー(コンテナー外)*/
+#headercover{
+    width:100%;height:50px;position:absolute;left:0px;top:0px;
+    background-color:#ff9999;text-align:center;
+    box-sizing:border-box;padding-top:10px;
+}
+/*ヘッダーブランク*/
+#headerblank{height:50px;background-color:#ffffff;}
+/*ヘッダー下広告*/
+#headersitaad{height:auto;background-color:#ffffff;}
+/*★★★★★コンテンツ★★★★★*/
+#contents{height:auto;background-color:#ffffff;text-align:center;}
+/*★★★★★フッター部分★★★★★*/
+/*フッターブランク*/
+#footerblank{height:70px;background-color:#ffffff;}
+/*フッターカバー(コンテナー外)*/
+#footercover{
+    background-color: #ff9999;
+    width:100%;height:70px;margin-right: auto;margin-left: auto;
+    position:absolute;left:0px;bottom:0px;
+    text-align: center;
+}
+#headbunner{width:200px;height:40px;}
+#smptope{width:320px;height:400px;}
+
+#p1{
+    font-size:13pt;
+    color:#666666;
+    margin:2px;
+    padding:2px;
+    line-height:100%;
+}
+
+.p2{font-size:13pt;line-height:130%;color:#666666;}
+
+#copyright{text-align:center;color:#ffffff;font-size:14px;line-height:14px;}
+
+#s1{color:#ff42bd;}
+
+#s2{color:#ff0000;}
+
+a{color:#ff42bd;}
+}
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■【スマホ用表示】■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+@media screen and (max-width:960px){
+#body{
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1em;
+    text-align: center;
+    position:relative;
+}
+#container{
+    margin-left:auto;margin-right:auto;
+    background-color:#ffffff;width:360px;
+    box-sizing:border-box;padding-bottom:20px;
+}
+/*★★★★★ヘッダー部分★★★★★*/
+/*ヘッダーカバー(コンテナー外)*/
+#headercover{
+    width:100%;height:50px;position:absolute;left:0px;top:0px;
+    background-color:#ff9999;text-align:center;
+    box-sizing:border-box;padding-top:10px;
+}
+/*ヘッダーブランク*/
+#headerblank{height:50px;background-color:#ffffff;}
+/*ヘッダー下広告*/
+#headersitaad{height:auto;background-color:#ffffff;}
+/*★★★★★コンテンツ★★★★★*/
+#contents{height:auto;background-color:#ffffff;text-align:center;}
+/*★★★★★フッター部分★★★★★*/
+/*フッターブランク*/
+#footerblank{height:70px;background-color:#ffffff;}
+/*フッターカバー(コンテナー外)*/
+#footercover{
+    background-color: #ff9999;
+    width:100%;height:70px;margin-right: auto;margin-left: auto;
+    position:absolute;left:0px;bottom:0px;
+    text-align: center;
+}
+#headbunner{width:200px;height:40px;}
+#smptope{width:320px;height:400px;}
+
+#p1{
+    font-size:13pt;
+    color:#666666;
+    margin:2px;
+    padding:2px;
+    line-height:100%;
+}
+
+.p2{font-size:13pt;line-height:130%;color:#666666;}
+
+#copyright{text-align:center;color:#ffffff;font-size:12px;line-height:14px;}
+
+#s1{color:#ff42bd;}
+
+#s2{color:#ff0000;}
+
+a{color:#ff42bd;}
+}
+</style>
+</head>
+<body id="body">
+<table id="container"><!--★★★★★★★★★★★★★★★コンテナ★★★★★★★★★★★★★★★-->
+<!--■■■■■■■■■■ヘッダーブランク■■■■■■■■■■-->
+<tr><td id="headerblank"></td></tr>
+<!--■■■■■■■■■■ヘッダー下広告■■■■■■■■■■-->
+<tr><td id="headersitaad">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9642990549530289"
+     crossorigin="anonymous"></script>
+<!-- スマホ版ふぁんしーあいらんどヘッダー広告 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-9642990549530289"
+     data-ad-slot="6025743199"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</td></tr>
+<!--■■■■■■■■■■コンテンツ部分■■■■■■■■■■-->
+<tr><td id ="contents">
+<p id="p1">
+幻想空間『ふぁんしーあいらんど』<br>
+(スマホ対応版)へようこそ♪<br>
+</p>
+
+<a href="smppref.html"target="_top">
+<img src="img/smptope.jpg"id="smptope">
+</a>
+
+<p>
+<a href="smpengtop.html"target="_top"style="font-size:16pt; font-weight:bold; color:#ff42bd;">
+Translate to English
+</a>
+</p>
+
+<p>
+<a href="deeptop.html"target="_top">
+<img src="img/deepbunnersmp.jpg"style="width:320px;height:100px;">
+</a>
+</p>
+<!--1行の文字数最大19文字-->
+<p class="p2">
+【<span id="s2">注意</span>】<br>
+当サイトのリンクを貼る際はこちらの<br>
+ページか<a href="http://www.lomando.com/"target="_top">PC版トップページ</a>のURLのみ<br>
+でお願い致します。
+</p>
+
+<p>
+<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</p>
+
+<p class="p2">
+↑ふぁんしー空間をツイートする↑
+</p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- スマホ版ふぁんしー記事冒頭下 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9642990549530289"
+     data-ad-slot="6723747193"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<p class="p2">
+ここから先はスマホで見れる簡易版と<br>
+なっております。PC版を遊ばれる方は<br>
+<a href="http://www.lomando.com"target="_top">PC版トップ</a>からお入り下さい。
+</p>
+
+<p class="p2">
+メインメニューへは<br>
+このページ上の方の<span id="s1">紫髪の猫耳キャラ絵</span>を<br>
+クリックして進んでね♪
+</p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- スマホ版ふぁんしー記事下 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9642990549530289"
+     data-ad-slot="4549009996"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<p class="p2">
+シーズンイベントページや<br>
+その他のゲームはこちら↓<br>
+<a href="eventpage.html"target="_top">
+<img src="img/linkevebt.png"style="width:200px; height:100px;border-width:0;">
+</a>
+</p>
+
+<p class="p2">
+更新情報は下のTwitterアカウントか<br>
+<a href="koushin.html"target="_top">コチラのページ</a>で見られます。
+</p>
+<p>
+<a href="https://twitter.com/fancy_islandrss?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">@fancy_islandrss</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</p>
+                
+<p>
+<script src="https://apis.google.com/js/platform.js"></script>
+<div class="g-ytsubscribe" data-channelid="UC-5ac9sGp8pCguVRcUkdqiA" data-layout="default" data-count="default"></div>
+</p>
+
+<p>
+<img src="img/smpmaga.jpg"border="0">
+</p>
+
+<p>
+<a href="http://line.me/S/sticker/1192060"target="_blank">
+<img src="img/smpfils2bn.jpg"border="0">
+</a>
+</p>
+
+<p>
+<a href="http://line.me/S/sticker/1166446"target="_blank">
+<img src="img/smpfilsbn.jpg"border="0">
+</a>
+</p>
+
+<p class="p2">
+当サイト管理人がyoutubeで公開<br>
+していたFLASHアニメ「<span id="s1">ねこショー</span>」<br>
+がLINEスタンプになりました！<br>
+下のバナーリンクのストアから購入できます。
+</p>
+
+<p>
+<a href="http://line.me/S/sticker/1149391"target="_blank">
+<img src="img/smpnslsbn.jpg"border="0">
+</a>
+</p>
+
+<!--■以前までのフッター上広告掲載位置■-->
+
+<p class="p2">
+当サイト内のほとんどの<br>
+効果音は<br>
+『<a href = "https://on-jin.com/" target = "_blank"style="color:#FF42BD">On-Jin ～音人～</a>』様、<br>
+BGMは<br>
+『<a href = "http://www.hmix.net/" target = "_blank"style="color:#FF42BD">フリー音楽素材 H/MIX GALLERY</a>』様<br>
+からお借りしているものです。<br>
+二次配布や無断利用は<br>
+禁止しております。
+</p>
+<a href="privacypolicy.html"target="_top"style="color:#FF42BD;font-size:12pt;">
+プライバシーポリシー
+</a>
+</td></tr>
+<!--■■■■■■■■■■フッターブランク■■■■■■■■■■-->
+<tr><td id="footerblank"></td></tr>
+</table><!--★★★★★★★★★★★★★★★コンテナここまで★★★★★★★★★★★★★★★-->
+<div id="headercover">
+<img src="img/smpheadbn.png"id="headbunner">
+</div>
+<div id="footercover">
+<p id="copyright"></p>
+</div>
+<script>
+    /*著作権表記*/
+    let copyright = document.getElementById('copyright');
+    let todey = new Date();
+    let kotoshi = todey.getFullYear();
+    window.addEventListener('load',function(){
+        copyright.innerText = '当サイト内のコンテンツの無断転載・無断複製を固く禁止致します。\nCopyright©2010-'+kotoshi+'"Fancy Island" All Rights Reserved';
+    });
+    /*★★★★★★★★★★★★★★★★★右クリック＆画像ドロップ禁止★★★★★★★★★★★★★★★★★★★★*/
+    document.oncontextmenu = function(){return false;}
+    document.onselectstart = function(){return false;}
+    document.onmousedown = function(){return false;}
+</script>
+</body>
+</html>
